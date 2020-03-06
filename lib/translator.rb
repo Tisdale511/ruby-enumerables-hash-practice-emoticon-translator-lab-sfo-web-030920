@@ -28,7 +28,8 @@ end
 
 def get_english_meaning(file_path, jap_emo)
   result = load_library(file_path)
-  result['get_emoticon'].each do |usa, jap|
+  binding.pry
+  result['get_meaning'].each do |usa, jap|
     if jap_emo == jap
       return usa
     end
