@@ -29,9 +29,9 @@ end
 def get_english_meaning(file_path, jap_emo)
   result = load_library(file_path)
   binding.pry
-  result['get_meaning'].each do |usa, jap|
+  result['get_meaning'].each do |jap_emo, meaning|
     if jap_emo == jap
-      return usa
+      return meaning
     end
   end
   return "Sorry, that emoticon was not found"
