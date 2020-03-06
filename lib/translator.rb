@@ -21,10 +21,10 @@ def get_japanese_emoticon(file_path, jap_emo)
   result['get_emoticon'] do |jap_emo, trans|
     trans do |usa, jap|
       binding.pry
-      jap_emo = usa[jap]
+      emo = usa[jap]
     end
   end
-  jap_emo
+  emo
 end
 
 def get_english_meaning
