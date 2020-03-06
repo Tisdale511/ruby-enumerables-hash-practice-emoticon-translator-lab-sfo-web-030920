@@ -28,7 +28,7 @@ end
 
 def get_english_meaning(file_path, jap_emo)
   result = load_library(file_path)
-  result['get_meaning'].each do |jap_emo, meaning|
+  result['get_meaning'].each do |jap, meaning|
     binding.pry
     if jap_emo == jap
       return meaning
