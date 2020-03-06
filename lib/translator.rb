@@ -22,7 +22,6 @@ def get_japanese_emoticon(file_path, jap_emo)
     trans do |usa, jap|
       binding.pry
       jap_emo = usa[jap]
-      
     end
   end
   jap_emo
