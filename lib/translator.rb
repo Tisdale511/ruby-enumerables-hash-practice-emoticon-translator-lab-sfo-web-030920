@@ -18,7 +18,7 @@ end
 
 def get_japanese_emoticon(file_path, jap_emo)
   result = load_library(file_path)
-  result['get_emoticon'] do |emo, trans|
+  result['get_emoticon'] do |jap_emo, trans|
     trans do |usa, jap|
       binding.pry
       jap_emo = usa[jap]
