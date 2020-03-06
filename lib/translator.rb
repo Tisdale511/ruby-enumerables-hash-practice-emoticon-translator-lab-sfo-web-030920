@@ -20,7 +20,7 @@ def get_japanese_emoticon(file_path, jap_emo)
   result = load_library(file_path)
   result['get_emoticon'].each do |emo, trans|
     binding.pry
-    trans.each do |usa, jap|
+    jap_emo 
       jap_emo = usa[jap]
     end
   end
