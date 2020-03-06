@@ -16,7 +16,7 @@ def load_library(file_path)
   hash
 end
 
-def get_japanese_emoticon(file_path, jap_emo)
+def get_japanese_emoticon(file_path, emoji)
   result = load_library(file_path)
   result['get_emoticon'] do |emo, trans|
     emo do |usa, jap|
